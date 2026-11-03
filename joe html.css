@@ -1,0 +1,29 @@
+/*colors
+6 types of colors
+1.named colors
+2.hexadecimal colors
+3.rgb colors
+4.hsl colors
+5.hsla colors
+6.rgba colors
+HEXADECIMAL COLORS    rrggbb*/
+div div{
+    color: #ff0000;
+}
+/*RGB COLORS   rgb(red,green,blue)*/
+h1{
+    color:rgb(255,255,255);
+}
+h2{
+    color:rgb(2,2,2);
+}
+h3{
+    color:rgb(255,255,255,0.5);
+}
+h4{
+    color:hsla(240,100%,50%,0.5);
+}
+/*modren rgb colors*/
+h5{
+    color:rgba(50% 50% 50%);
+}
