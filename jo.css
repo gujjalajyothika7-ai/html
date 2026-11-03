@@ -1,0 +1,6 @@
+.Head>p{
+        COLOR: rgb(239, 151, 8);      /*when we use >symbol it will select only the direct child of the parent element*/
+}
+.left + div{
+            color: blueviolet;      /*when we use +symbol it will select only the next sibling of the parent element*/
+}
