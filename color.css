@@ -1,0 +1,27 @@
+body{
+    background:repeating-conic-gradient( rgb(238, 6, 238)0% 3%,indigo 3% 6%,blue 6% 9%,green 9% 12%,orange 12% 15%,red 15% 18%);
+}
+div div{
+    color:rgb(128, 3, 245);
+    font-family:'courier new',courier,monospace;
+    font-size: 25px;
+    font-weight:600;
+    font-style:italic;
+    font-variant:small-caps;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow:4px 4px rgb(243, 5, 223),6px 6px black;
+    letter-spacing:2px;
+    word-spacing:5px;
+    line-height:60px;
+    white-space:nowrap;
+    border:2px solid rgb(0, 0, 0);
+    outline:2px solid rgb(16, 236, 8);
+    outline-offset:5px;
+}
+a{
+    text-decoration:none;
+}
+ul{
+   list-style-type:disc;
+}
