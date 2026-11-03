@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomeFix - Home Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <div class="logo">HomeFix</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#workers">Workers</a>
+            <a href="#booking">Book Now</a>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Home Problems?</h1>
+
+            <h2>We Find The Right Worker For You.</h2>
+
+            <p>
+                Book trusted workers for plumbing, furniture repair,
+                electrical work, cleaning and more.
+            </p>
+
+            <button onclick="scrollToServices()">
+                Book a Service
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <p class="section-description">
+            Select the service you need
+        </p>
+
+
+        <div class="service-container">
+
+            <div class="service-card"
+                 onclick="selectService('Furniture Repair')">
+
+                <div class="service-icon">🪑</div>
+
+                <h3>Furniture Repair</h3>
+
+                <p>
+                    Repair tables, chairs, cupboards and other furniture.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Plumbing')">
+
+                <div class="service-icon">🚰</div>
+
+                <h3>Plumbing</h3>
+
+                <p>
+                    Fix sinks, taps, pipes and water problems.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Electrical')">
+
+                <div class="service-icon">💡</div>
+
+                <h3>Electrical</h3>
+
+                <p>
+                    Fix switches, lights, fans and electrical problems.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Cleaning')">
+
+                <div class="service-icon">🧹</div>
+
+                <h3>Home Cleaning</h3>
+
+                <p>
+                    Book workers for home cleaning services.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Workers -->
+
+    <section id="workers">
+
+        <h2>Available Workers</h2>
+
+        <div class="worker-container">
+
+            <div class="worker-card">
+
+                <div class="worker-image">
+                    👨‍🔧
+                </div>
+
+                <h3>Ravi Kumar</h3>
+
+                <p>🔧 Plumbing Expert</p>
+
+                <p>⭐ 4.8 Rating</p>
+
+                <p>Experience: 5 Years</p>
+
+                <button onclick="selectService('Plumbing')">
+                    Book Ravi
+                </button>
+
+            </div>
+
+
+            <div class="worker-card">
+
+                <div class="worker-image">
+                    👨‍🔧
+                </div>
+
+                <h3>Suresh</h3>
+
+                <p>🪑 Furniture Expert</p>
+
+                <p>⭐ 4.7 Rating</p>
+
+                <p>Experience: 7 Years</p>
+
+                <button onclick="selectService('Furniture Repair')">
+                    Book Suresh
+                </button>
+
+            </div>
+
+
+            <div class="worker-card">
+
+                <div class="worker-image">
+                    👷
+                </div>
+
+                <h3>Arun</h3>
+
+                <p>💡 Electrician</p>
+
+                <p>⭐ 4.9 Rating</p>
+
+                <p>Experience: 6 Years</p>
+
+                <button onclick="selectService('Electrical')">
+                    Book Arun
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking Form -->
+
+    <section id="booking">
+
+        <h2>Book a Worker</h2>
+
+        <form onsubmit="bookWorker(event)">
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+
+            <label>Select Service</label>
+
+            <select id="service" required>
+
+                <option value="">
+                    Select a service
+                </option>
+
+                <option value="Furniture Repair">
+                    Furniture Repair
+                </option>
+
+                <option value="Plumbing">
+                    Plumbing
+                </option>
+
+                <option value="Electrical">
+                    Electrical
+                </option>
+
+                <option value="Cleaning">
+                    Home Cleaning
+                </option>
+
+            </select>
+
+
+            <label>Select Date</label>
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+
+            <label>Describe Your Problem</label>
+
+            <textarea
+                id="problem"
+                placeholder="Example: Sink water is leaking..."
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+
+        <div id="confirmation"></div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>HomeFix</h3>
+
+        <p>
+            Your home service partner.
+        </p>
+
+        <p>
+            © 2026 HomeFix
+        </p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
