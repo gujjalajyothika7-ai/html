@@ -1,0 +1,28 @@
+h1{
+    color:rgb(238, 238, 243)
+}
+header{
+    background-color:rgb(35, 177, 35)
+}
+h2{
+    color:rgb(9, 9, 245)
+}
+nav{
+    background-color:rgb(19, 32, 19)
+}
+a[href="#home"]{
+    color:rgb(245, 242, 242)
+}
+[href="#About"]{
+    color:rgb(245, 242, 242)
+}
+[href="#Schedule"]{
+    color:rgb(245, 242, 242)
+}
+[href="#Speakers"]{
+    color:rgb(245, 242, 242)
+}
+[href="#Contact"]{
+    color:rgb(245, 242, 242)
+}
+  
