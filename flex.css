@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction:column-reverse;
+    height:200px;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.student div{
+    width: 100px;
+    height: 100px;
+}
