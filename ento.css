@@ -1,0 +1,7 @@
+.first ~ p{
+    color: rgb(239, 43, 8);      /*when we use ~symbol it will select all the next siblings of the parent element*/
+}
+.second+ p{
+    color: blueviolet;      /*when we use +symbol it will select only the next sibling of the parent element*/
+}
+    
