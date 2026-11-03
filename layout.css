@@ -1,0 +1,30 @@
+.student{
+    display: inline-block;
+    border:1px solid black;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+a:hover{
+    display:none;
+}
+#jk{
+    position:fixed;
+    top:200px;
+}
+[href="#About"]{
+    position:sticky;
+    top:200px;
+}
+a{
+    display:block;
+    text-decoration: none;
+    border:1px solid black;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
